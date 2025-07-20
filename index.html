@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mens Hub - Moda para caballeros</title>
+  <style>
+    * {
+      margin: 0; padding: 0; box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      background: #f0f2f5;
+      color: #333;
+    }
+
+    header {
+      background: #1e1e1e;
+      color: #fff;
+      padding: 30px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 3em;
+      margin-bottom: 5px;
+      letter-spacing: 2px;
+    }
+
+    header p {
+      font-size: 1.2em;
+      color: #ccc;
+    }
+
+    nav {
+      background: #111;
+      display: flex;
+      justify-content: center;
+      padding: 12px;
+      gap: 30px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #ff4d4d;
+    }
+
+    .inicio {
+      text-align: center;
+      padding: 50px 20px;
+    }
+
+    .inicio h2 {
+      font-size: 2.5em;
+      color: #111;
+      margin-bottom: 20px;
+    }
+
+    .descripcion {
+      max-width: 900px;
+      margin: auto;
+      font-size: 1.1em;
+      line-height: 1.8;
+      text-align: justify;
+    }
+
+    .descripcion img {
+      width: 100%;
+      max-width: 800px;
+      border-radius: 12px;
+      margin: 25px auto;
+      display: block;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .seccion-productos {
+      padding: 40px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .seccion-productos h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      font-size: 2em;
+      color: #111;
+    }
+
+    .galeria {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 25px;
+    }
+
+    .producto {
+      background: white;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      transition: transform 0.2s;
+    }
+
+    .producto:hover {
+      transform: translateY(-5px);
+    }
+
+    .producto img {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+    }
+
+    .producto-info {
+      padding: 15px;
+    }
+
+    .producto-info h3 {
+      margin-bottom: 8px;
+      color: #222;
+    }
+
+    .producto-info p {
+      color: #555;
+      font-size: 0.95em;
+      line-height: 1.5;
+    }
+
+    .contacto-btn {
+      display: block;
+      margin: 50px auto;
+      padding: 15px 30px;
+      background: #111;
+      color: white;
+      border: none;
+      font-size: 1em;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .contacto-btn:hover {
+      background: #ff4d4d;
+    }
+
+    footer {
+      background: #1e1e1e;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 50px;
+    }
+
+    .popup {
+      display: none;
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0,0,0,0.6);
+      justify-content: center;
+      align-items: center;
+    }
+
+    .popup-content {
+      background: white;
+      padding: 30px;
+      border-radius: 12px;
+      width: 90%;
+      max-width: 400px;
+    }
+
+    .popup-content input,
+    .popup-content textarea {
+      width: 100%;
+      margin: 10px 0;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+
+    .popup-content button {
+      background: #111;
+      color: white;
+      padding: 10px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Mens Hub</h1>
+    <p>Ropa urbana y elegante para hombres con estilo                                                                       
+        
+            creado por Josue G.
+        Colaboradores Maria Jose
+        idea de negocio Amiga de Maria Jose
+    </p>
+  </header>
+
+  <nav>
+    <a href="#">Inicio</a>
+    <a href="#productos">Catálogo</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+
+  <section class="inicio">
+    <h2>Bienvenidos a mi negocio</h2>
+    <div class="descripcion">
+      <p>Mens Hub nace del deseo de ofrecer moda auténtica, fresca y poderosa para hombres con actitud.</p>
+      <img src="https://d1fufvy4xao6k9.cloudfront.net/images/blog/posts/2024/07/hockerty_brown_cotton_polo_shirt_--ar_43_7910f81c-0c67-49c6-a350-b578061a1a81_1.jpg" alt="Moda masculina">
+      <p>Nos enfocamos en diseñar ropa que exprese quién eres sin que digas una palabra.</p>
+      <p>Cada prenda está pensada para resaltar tu estilo único y personalidad.</p>
+      <img src="https://cdn.shopify.com/s/files/1/0479/4558/0694/files/chio-lecca-blog-estilo-urbano-hip-hop.jpg?v=1721338322" alt="Estilo urbano">
+      <p>La moda no es solo apariencia, es identidad y seguridad.</p>
+      <p>En Mens Hub creemos que lo masculino puede ser moderno, cómodo y elegante al mismo tiempo.</p>
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdmUNT8h0ayP6DrB6ZNleDGIGHnIRsVw3uWg&s" alt="Camisas casuales">
+      <p>Trabajamos con materiales de alta calidad que garantizan durabilidad y confort.</p>
+      <p>Desde camisetas casuales hasta outfits completos para eventos, aquí lo encuentras todo.</p>
+      <p>Somos más que una marca, somos una comunidad de estilo y evolución.</p>
+      <img src="https://i.pinimg.com/236x/43/95/e5/4395e5be455dddefe0242aea396c908a.jpg" alt="Look moderno">
+      <p>Apoyamos la producción local y la creatividad joven en cada diseño.</p>
+      <p>Nuestros productos están inspirados en las últimas tendencias internacionales.</p>
+      <p>Mens Hub es sinónimo de pasión, diseño y confianza masculina.</p>
+      <p>¿Estás listo para marcar la diferencia con tu ropa?</p>
+      <img src="https://hips.hearstapps.com/hmg-prod/images/manuel-fiori-wears-grey-blazer-white-pants-bag-dario-news-photo-1720169585.jpg?crop=0.668xw:1.00xh;0.0935xw,0&resize=1200:*" alt="Estilo elegante">
+      <p>Gracias por apoyar lo auténtico, gracias por ser parte de Mens Hub.</p>
+    </div>
+  </section>
+
+  <section class="seccion-productos" id="productos">
+    <h2>Nuevas Colecciones</h2>
+    <div class="galeria">
+
+      <div class="producto">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2FjdVqjdWbcg7H29hVI8tHpgR-u2ELnYVvA&s" alt="Camiseta negra">
+        <div class="producto-info">
+          <h3>Camiseta Urbana Negra</h3>
+          <p>Algodón 100%, look casual con personalidad. Tallas: S, M, L, XL. Precio: $22</p>
+        </div>
+      </div>
+
+      <div class="producto">
+        <img src="https://narzeayates.com/wp-content/uploads/2024/10/Outfit-para-Yate-Hombre.webp" alt="Hoodie gris">
+        <div class="producto-info">
+          <h3>Hoodie Oversize Gris</h3>
+          <p>Ideal para clima templado. Interior suave. Precio: $35</p>
+        </div>
+      </div>
+
+      <div class="producto">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmFn_FEuVqpP5zymyT_6tPiJDJcLFUGWWRsQ&s" alt="Pantalón cargo">
+        <div class="producto-info">
+          <h3>Pantalón Cargo Caqui</h3>
+          <p>Funcional, moderno y cómodo. Precio: $30</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <button class="contacto-btn" onclick="abrirFormulario()" id="contacto">Contáctanos</button>
+
+  <footer>
+    <p>&copy; 2025 Mens Hub - Todos los derechos reservados</p>
+  </footer>
+
+  <!-- Formulario emergente -->
+  <div class="popup" id="popup">
+    <div class="popup-content">
+      <h3>¿Tienes dudas?</h3>
+      <input type="text" placeholder="Tu nombre" />
+      <input type="email" placeholder="Correo electrónico" />
+      <textarea rows="4" placeholder="Escribe tu mensaje aquí..."></textarea>
+      <button onclick="cerrarFormulario()">Enviar</button>
+    </div>
+  </div>
+
+  <script>
+    function abrirFormulario() {
+      document.getElementById('popup').style.display = 'flex';
+    }
+
+    function cerrarFormulario() {
+      document.getElementById('popup').style.display = 'none';
+    }
+  </script>
+
+</body>
+</html>
