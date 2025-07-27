@@ -2,8 +2,8 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mens Hub - Moda para caballeros</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>PROYECTO INTERDICIPLINARIO</title>
   <style>
     * {
       margin: 0; padding: 0; box-sizing: border-box;
@@ -31,6 +31,9 @@
     header p {
       font-size: 1.2em;
       color: #ccc;
+      line-height: 1.4;
+      max-width: 900px;
+      margin: 0 auto;
     }
 
     nav {
@@ -39,6 +42,7 @@
       justify-content: center;
       padding: 12px;
       gap: 30px;
+      flex-wrap: wrap;
     }
 
     nav a {
@@ -46,107 +50,67 @@
       text-decoration: none;
       font-weight: bold;
       transition: 0.3s;
+      padding: 6px 10px;
     }
 
     nav a:hover {
       color: #ff4d4d;
     }
 
-    .inicio {
-      text-align: center;
-      padding: 50px 20px;
-    }
-
-    .inicio h2 {
-      font-size: 2.5em;
-      color: #111;
-      margin-bottom: 20px;
-    }
-
-    .descripcion {
+    section {
+      padding: 40px 20px;
       max-width: 900px;
       margin: auto;
-      font-size: 1.1em;
-      line-height: 1.8;
-      text-align: justify;
-    }
-
-    .descripcion img {
-      width: 100%;
-      max-width: 800px;
+      background: white;
       border-radius: 12px;
-      margin: 25px auto;
-      display: block;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      margin-bottom: 40px;
     }
 
-    .seccion-productos {
-      padding: 40px 20px;
-      max-width: 1200px;
-      margin: auto;
-    }
-
-    .seccion-productos h2 {
+    section h2 {
       text-align: center;
-      margin-bottom: 30px;
+      margin-bottom: 25px;
       font-size: 2em;
       color: #111;
     }
 
-    .galeria {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 25px;
-    }
-
-    .producto {
-      background: white;
-      border-radius: 12px;
-      overflow: hidden;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-      transition: transform 0.2s;
-    }
-
-    .producto:hover {
-      transform: translateY(-5px);
-    }
-
-    .producto img {
-      width: 100%;
-      height: 300px;
-      object-fit: cover;
-    }
-
-    .producto-info {
-      padding: 15px;
-    }
-
-    .producto-info h3 {
-      margin-bottom: 8px;
+    section h3 {
+      margin-bottom: 15px;
       color: #222;
     }
 
-    .producto-info p {
-      color: #555;
-      font-size: 0.95em;
-      line-height: 1.5;
+    section p {
+      font-size: 1.1em;
+      line-height: 1.7;
+      margin-bottom: 15px;
+      text-align: justify;
+      white-space: pre-wrap;
     }
 
-    .contacto-btn {
-      display: block;
-      margin: 50px auto;
-      padding: 15px 30px;
-      background: #111;
-      color: white;
-      border: none;
-      font-size: 1em;
-      border-radius: 8px;
-      cursor: pointer;
-      transition: 0.3s;
+    section ul {
+      margin-left: 20px;
+      margin-bottom: 20px;
     }
 
-    .contacto-btn:hover {
-      background: #ff4d4d;
+    section ul li {
+      margin-bottom: 8px;
+      font-size: 1.05em;
+    }
+
+    .espacio-imagen {
+      height: 200px;
+      width: 100%;
+      max-width: 700px;
+      background: #ddd;
+      border-radius: 12px;
+      margin: 20px auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #666;
+      font-style: italic;
+      font-size: 1.2em;
+      box-shadow: inset 0 0 5px #bbb;
     }
 
     footer {
@@ -154,149 +118,377 @@
       color: white;
       text-align: center;
       padding: 20px;
-      margin-top: 50px;
-    }
-
-    .popup {
-      display: none;
-      position: fixed;
-      top: 0; left: 0; right: 0; bottom: 0;
-      background: rgba(0,0,0,0.6);
-      justify-content: center;
-      align-items: center;
-    }
-
-    .popup-content {
-      background: white;
-      padding: 30px;
-      border-radius: 12px;
-      width: 90%;
-      max-width: 400px;
-    }
-
-    .popup-content input,
-    .popup-content textarea {
-      width: 100%;
-      margin: 10px 0;
-      padding: 10px;
-      border: 1px solid #ccc;
-      border-radius: 6px;
-    }
-
-    .popup-content button {
-      background: #111;
-      color: white;
-      padding: 10px;
-      border: none;
-      border-radius: 6px;
-      cursor: pointer;
-      margin-top: 10px;
+      margin-top: 20px;
+      font-size: 0.9em;
     }
   </style>
 </head>
 <body>
 
-  <header>
-    <h1>Mens Hub</h1>
-    <p>Ropa urbana y elegante para hombres con estilo                                                                       
-        
-            creado por Josue G.
-        Colaboradores Maria Jose
-        idea de negocio Jessica
-        critica construcitiva Piero
-    </p>
-  </header>
+<header>
+  <h1>proyecto interdiplinario </h1>
+  <p>creado por Josue Gracia 3B tecnico .</p>
+</header>
 
-  <nav>
-    <a href="#">Inicio</a>
-    <a href="#productos">Catálogo</a>
-    <a href="#contacto">Contacto</a>
-  </nav>
+<nav>
+  <a href="#biologia">Biología</a>
+  <a href="#quimica">Química</a>
+  <a href="#matematicas">Matemáticas</a>
+  <a href="#ingles">Inglés</a>
+  <a href="#fisica">Física</a>
+  <a href="#lengua">Lengua y Literatura</a>
+  <a href="#historia">Historia</a>
+  <a href="#emprendimiento">Emprendimiento</a>
+  <a href="#filosofia">Filosofía</a>
+  <a href="#programacion">Programación</a>
+</nav>
 
-  <section class="inicio">
-    <h2>Bienvenidos a mi negocio</h2>
-    <div class="descripcion">
-      <p>Agradecemos con mucho orgullo y admiración a Jessica, mente brillante detrás de la idea original de Mens Hub.
-Su creatividad, visión y pasión por la moda masculina fueron el motor que dio inicio a este emprendimiento.
+<!-- Biología -->
+<section id="biologia">
+  <h2>Biología</h2>
+  <h3>Clasificación de ecosistemas y sus relaciones tróficas</h3>
+  <p>Los ecosistemas son sistemas naturales formados por comunidades de seres vivos (biocenosis) que interactúan entre sí y con el medio físico (biotopo). Se clasifican según el medio donde se desarrollan y presentan una estructura trófica que determina el flujo de energía y materia.</p>
+  
+  <h4>Clasificación de Ecosistemas</h4>
+  <p><strong>1. Ecosistemas Terrestres</strong><br>
+  Son aquellos que se desarrollan sobre la superficie terrestre. El clima, la altitud y el tipo de suelo influyen mucho en su composición.</p>
+  <ul>
+    <li>Bosques: Alta biodiversidad. Ejemplos: selvas tropicales, bosques templados, taigas.</li>
+    <li>Praderas: Dominadas por hierbas y pastos. Ejemplos: sabanas, pampas.</li>
+    <li>Desiertos: Escasa vegetación, clima seco y temperaturas extremas.</li>
+    <li>Tundras: Zonas frías, con suelo congelado (permafrost) y vegetación baja como musgos y líquenes.</li>
+  </ul>
 
-"Cada prenda nace de una idea. La nuestra nació de Jessica."</p>
-      <img src="https://d1fufvy4xao6k9.cloudfront.net/images/blog/posts/2024/07/hockerty_brown_cotton_polo_shirt_--ar_43_7910f81c-0c67-49c6-a350-b578061a1a81_1.jpg" alt="Moda masculina">
-      <p>Nos enfocamos en diseñar ropa que exprese quién eres sin que digas una palabra.</p>
-      <p>Cada prenda está pensada para resaltar tu estilo único y personalidad.</p>
-      <img src="https://cdn.shopify.com/s/files/1/0479/4558/0694/files/chio-lecca-blog-estilo-urbano-hip-hop.jpg?v=1721338322" alt="Estilo urbano">
-      <p>La moda no es solo apariencia, es identidad y seguridad.</p>
-      <p>En Mens Hub creemos que lo masculino puede ser moderno, cómodo y elegante al mismo tiempo.</p>
-      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdmUNT8h0ayP6DrB6ZNleDGIGHnIRsVw3uWg&s" alt="Camisas casuales">
-      <p>Trabajamos con materiales de alta calidad que garantizan durabilidad y confort.</p>
-      <p>Desde camisetas casuales hasta outfits completos para eventos, aquí lo encuentras todo.</p>
-      <p>Somos más que una marca, somos una comunidad de estilo y evolución.</p>
-      <img src="https://i.pinimg.com/236x/43/95/e5/4395e5be455dddefe0242aea396c908a.jpg" alt="Look moderno">
-      <p>Apoyamos la producción local y la creatividad joven en cada diseño.</p>
-      <p>Nuestros productos están inspirados en las últimas tendencias internacionales.</p>
-      <p>Mens Hub es sinónimo de pasión, diseño y confianza masculina.</p>
-      <p>¿Estás listo para marcar la diferencia con tu ropa?</p>
-      <img src="https://hips.hearstapps.com/hmg-prod/images/manuel-fiori-wears-grey-blazer-white-pants-bag-dario-news-photo-1720169585.jpg?crop=0.668xw:1.00xh;0.0935xw,0&resize=1200:*" alt="Estilo elegante">
-      <p>Gracias por apoyar lo auténtico, gracias por ser parte de Mens Hub.</p>
-    </div>
-  </section>
+  <p><strong>2. Ecosistemas Acuáticos:</strong></p>
+  <ul>
+    <li>Ecosistemas de agua dulce: ríos, lagos, arroyos, lagunas y pantanos. Baja salinidad.</li>
+    <li>Ecosistemas marinos: mares, océanos, arrecifes de coral. Alta salinidad y los más extensos.</li>
+  </ul>
 
-  <section class="seccion-productos" id="productos">
-    <h2>Nuevas Colecciones</h2>
-    <div class="galeria">
+  <p><strong>3. Ecosistemas Mixtos o Transicionales:</strong></p>
+  <ul>
+    <li>Humedales: Áreas inundadas periódicamente o permanentemente.</li>
+    <li>Manglares: Zonas costeras con vegetación adaptada al agua salada.</li>
+    <li>Estuarios: Donde el agua dulce de ríos se mezcla con agua salada del mar.</li>
+  </ul>
 
-      <div class="producto">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2FjdVqjdWbcg7H29hVI8tHpgR-u2ELnYVvA&s" alt="Camiseta negra">
-        <div class="producto-info">
-          <h3>Camiseta Urbana Negra</h3>
-          <p>Algodón 100%, look casual con personalidad. Tallas: S, M, L, XL. Precio: $22</p>
-        </div>
-      </div>
+  <h4>Relaciones Tróficas en los Ecosistemas</h4>
+  <p>Las relaciones tróficas explican cómo fluye la energía y la materia entre los organismos de un ecosistema. Se representan mediante cadenas y redes alimenticias.</p>
 
-      <div class="producto">
-        <img src="https://narzeayates.com/wp-content/uploads/2024/10/Outfit-para-Yate-Hombre.webp" alt="Hoodie gris">
-        <div class="producto-info">
-          <h3>Hoodie Oversize Gris</h3>
-          <p>Ideal para clima templado. Interior suave. Precio: $35</p>
-        </div>
-      </div>
+  <ul>
+    <li><strong>Productores:</strong> Organismos autótrofos que fabrican su propio alimento mediante fotosíntesis. Base de la cadena alimentaria.</li>
+    <li><strong>Consumidores:</strong> Herbívoros (primarios), carnívoros (secundarios, terciarios y cuaternarios), según su lugar en la cadena.</li>
+    <li><strong>Descomponedores:</strong> Bacterias, hongos y lombrices que transforman materia muerta en nutrientes.</li>
+  </ul>
 
-      <div class="producto">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmFn_FEuVqpP5zymyT_6tPiJDJcLFUGWWRsQ&s" alt="Pantalón cargo">
-        <div class="producto-info">
-          <h3>Pantalón Cargo Caqui</h3>
-          <p>Funcional, moderno y cómodo. Precio: $30</p>
-        </div>
-      </div>
+  <p><strong>Cadena y Red Trófica:</strong></p>
+  <ul>
+    <li>Cadena trófica: secuencia lineal donde cada organismo se alimenta del anterior (Ejemplo: hierba → conejo → zorro → águila).</li>
+    <li>Red trófica: conjunto de cadenas interconectadas que reflejan relaciones complejas en el ecosistema.</li>
+  </ul>
+</section>
+<img src="https://biodiversidad-3rotc-b.netlify.app/1.jpg" alt="Bosque deforestado en Ecuador" width="900" height="500"/>
 
-    </div>
-  </section>
 
-  <button class="contacto-btn" onclick="abrirFormulario()" id="contacto">Contáctanos</button>
+<!-- Química -->
+<section id="quimica">
+  <h2>Química</h2>
+  <h3>Compuestos Orgánicos en Productos Naturales y su Relación con la Biodiversidad</h3>
+  <p><strong>1. ¿Qué son los productos naturales?</strong><br>
+  Son compuestos orgánicos producidos por organismos vivos (plantas, bacterias, hongos, animales marinos, etc.). Cumplen funciones biológicas específicas como defensa, atracción de polinizadores o competencia.</p>
 
-  <footer>
-    <p>&copy; derechos reservador a industrias Lokuras"</p>
-  </footer>
+  <p><strong>2. Ejemplos comunes de compuestos orgánicos en productos naturales:</strong></p>
+  <ul>
+    <li>Alcaloides (cafeína, morfina, nicotina)</li>
+    <li>Terpenos (mentol, limoneno, taxol)</li>
+    <li>Flavonoides (quercetina, antocianinas)</li>
+    <li>Ácidos fenólicos (ácido salicílico)</li>
+    <li>Polisacáridos (pectina, celulosa)</li>
+    <li>Lípidos y ácidos grasos (omega-3, aceites esenciales)</li>
+  </ul>
 
-  <!-- Formulario emergente -->
-  <div class="popup" id="popup">
-    <div class="popup-content">
-      <h3>¿Tienes dudas?</h3>
-      <input type="text" placeholder="Tu nombre" />
-      <input type="email" placeholder="Correo electrónico" />
-      <textarea rows="4" placeholder="Escribe tu mensaje aquí..."></textarea>
-      <button onclick="cerrarFormulario()">Enviar</button>
-    </div>
-  </div>
+  <p><strong>3. Relación con la biodiversidad:</strong><br>
+  La biodiversidad está relacionada con la diversidad química de estos compuestos. Más especies implican más compuestos únicos. Ecosistemas ricos (selvas, arrecifes) son fuente clave de moléculas bioactivas. Plantas y microorganismos producen compuestos adaptativos que benefician medicina, agricultura e industria.</p>
 
-  <script>
-    function abrirFormulario() {
-      document.getElementById('popup').style.display = 'flex';
-    }
+  <p><strong>Importancia del estudio químico de estos compuestos:</strong></p>
+  <ul>
+    <li>Descubrimiento de medicamentos (aspirina, penicilina, taxol, artemisinina).</li>
+    <li>Conservación de la biodiversidad.</li>
+    <li>Bioprospección.</li>
+    <li>Sustentabilidad y desarrollo local.</li>
+  </ul>
 
-    function cerrarFormulario() {
-      document.getElementById('popup').style.display = 'none';
-    }
-  </script>
+  <p><strong>5. Métodos para el estudio químico:</strong></p>
+  <ul>
+    <li>Extracción (etanol, metanol, hexano, etc.)</li>
+    <li>Cromatografía (TLC, HPLC, GC)</li>
+    <li>Espectroscopía (IR, UV-Vis, RMN, MS)</li>
+    <li>Ensayos bioquímicos (actividad antibacteriana, antioxidante, etc.)</li>
+  </ul>
+
+  <p><strong>Conclusión:</strong><br>
+  El estudio de compuestos orgánicos en productos naturales es fundamental para entender la relación entre química y biodiversidad, promoviendo innovación, salud y conservación ambiental.</p>
+</section>
+
+<!-- Matemáticas -->
+<section id="matematicas">
+  <h2>Matemáticas</h2>
+  <h3>Análisis Estadístico de la Biodiversidad en las 4 Regiones del Ecuador</h3>
+  <p>Aplicar herramientas estadísticas para comparar la biodiversidad (número y tipo de especies) en las cuatro regiones naturales del Ecuador: Costa, Sierra, Amazonía y Galápagos, para tomar decisiones de conservación basadas en evidencia científica.</p>
+
+  <h4>2. Regiones a Analizar</h4>
+  <ul>
+    <li>Costa</li>
+    <li>Sierra</li>
+    <li>Amazonía</li>
+    <li>Galápagos</li>
+  </ul>
+
+  <h4>3. Variables a Analizar</h4>
+  <p>(Agregar aquí las variables específicas que se analizarán según datos recolectados)</p>
+
+  <h4>4. Recolección de Datos</h4>
+  <p>Datos obtenidos de fuentes oficiales:</p>
+  <ul>
+    <li>Ministerio del Ambiente (MAATE)</li>
+    <li>INEC</li>
+    <li>Informes de biodiversidad</li>
+  </ul>
+  <p>Datos relevantes:</p>
+  <ul>
+    <li>Especies registradas (plantas, aves, mamíferos)</li>
+    <li>Especies endémicas</li>
+    <li>Especies en peligro de extinción</li>
+    <li>Tamaño de área protegida (hectáreas o %)</li>
+  </ul>
+
+  <h4>Ejemplo de tabla</h4>
+  
+  <img src="https://biodiversidad-3rotc-b.netlify.app/mate.PNG" alt="Descripción de la imagen" width="800" />
+
+
+  <h4>5. Herramientas Estadísticas Aplicables</h4>
+  <ul>
+    <li>Medidas de tendencia central: media y moda de especies por región.</li>
+    <li>Medidas de dispersión: varianza y desviación estándar.</li>
+    <li>Índices de diversidad ecológica: Shannon y Simpson.</li>
+    <li>Gráficos de barras y pastel para comparar especies y porcentajes.</li>
+    <li>Diagramas de dispersión: presión humana vs pérdida de biodiversidad.</li>
+    <li>Análisis de correlación entre áreas protegidas y diversidad.</li>
+    <li>ANOVA para determinar diferencias significativas entre regiones.</li>
+  </ul>
+
+  <h4>Ejemplo de datos comparativos</h4>
+  <img src="https://biodiversidad-3rotc-b.netlify.app/mate2.PNG" alt="Descripción de la imagen" width="800" />
+
+
+  <h4>7. Interpretación Inicial</h4>
+  <ul>
+    <li>Galápagos: Mayor índice de diversidad (4.9) y alta concentración de especies endémicas.</li>
+    <li>Amazonía: Mayor número de especies totales, enfrenta presión humana (deforestación).</li>
+    <li>Sierra y Costa: Biodiversidad moderada, amenazas por urbanización y agricultura.</li>
+    <li>Costa: Menor proporción de áreas protegidas, riesgo importante.</li>
+  </ul>
+
+  <h4>8. Uso de los Resultados</h4>
+  <ul>
+    <li>Guiar políticas de conservación en regiones vulnerables.</li>
+    <li>Diseñar estrategias para expandir áreas protegidas.</li>
+    <li>Fomentar educación ambiental específica para cada región.</li>
+    <li>Establecer prioridades basadas en evidencia cuantitativa.</li>
+  </ul>
+
+  <h4>9. Conclusión de la Fase 1</h4>
+  <p>Gracias al análisis estadístico inicial, es posible identificar qué regiones requieren mayor protección, cuáles son más ricas en biodiversidad y cómo priorizar acciones de conservación con datos reales y objetivos.</p>
+</section>
+
+<!-- Inglés -->
+<section id="ingles">
+  <h2>Inglés</h2>
+  <p>(Contenido de inglés aquí...)</p>
+</section>
+
+<!-- Física -->
+<section id="fisica">
+  <h2>Física</h2>
+  <h3>Principios físicos del vuelo de aves e insectos nativos</h3>
+  <p>El vuelo tanto de aves como de insectos se basa en principios fundamentales de la física, especialmente en la aerodinámica y las leyes del movimiento de Newton.</p>
+  <p>Estos organismos han evolucionado para desplazarse por el aire de manera eficiente. Este proyecto explora cómo los principios físicos permiten el vuelo de aves e insectos nativos, destacando ejemplos específicos y explicando las fuerzas y mecanismos involucrados.</p>
+
+  <h4>Principios Físicos del Vuelo</h4>
+
+  <h5>1. Fuerzas Aerodinámicas:</h5>
+  <ul>
+    <li><strong>Sustentación (Lift):</strong> La fuerza hacia arriba que contrarresta el peso del animal, generada por la diferencia de presión entre la parte superior e inferior de las alas, según el principio de Bernoulli.</li>
+    <li><strong>Peso:</strong> La fuerza gravitacional que actúa sobre la masa del animal, hacia abajo.</li>
+    <li><strong>Empuje (Thrust):</strong> La fuerza hacia adelante generada por el batir de las alas o el movimiento del cuerpo.</li>
+    <li><strong>Resistencia (Drag):</strong> La fuerza opuesta al movimiento, causada por la fricción del aire.</li>
+  </ul>
+
+  <p>La ecuación básica de la sustentación es: <br>
+    <em>L = (1/2) ρ v² A C<sub>L</sub></em> <br>
+    Donde:
+  </p>
+  <ul>
+    <li>(L): Sustentación</li>
+    <li>(ρ): Densidad del aire</li>
+    <li>(v): Velocidad del flujo de aire</li>
+    <li>(A): Área de las alas</li>
+    <li>(C<sub>L</sub>): Coeficiente de sustentación (depende de la forma del ala y el ángulo de ataque)</li>
+  </ul>
+
+  <h5>El principio de Bernoulli</h5>
+  <p>Cuando un fluido como el aire se mueve más rápido, su presión disminuye. Las alas de aves e insectos están curvadas arriba y planas abajo para que el aire fluya más rápido por arriba, generando menor presión y creando sustentación.</p>
+
+  <h5>3. Efecto Coandă</h5>
+  <p>Este efecto describe cómo un fluido tiende a seguir la superficie de un objeto curvo. En el vuelo de insectos, como las libélulas, el movimiento rápido de las alas crea vórtices de baja presión que mejoran la sustentación.</p>
+
+  <ul>
+    <li><strong>Primera Ley (Inercia):</strong> Un ave o insecto en reposo o en movimiento uniforme continuará así a menos que actúe una fuerza externa.</li>
+    <li><strong>Segunda Ley (F = ma):</strong> La aceleración del animal depende de la fuerza neta (empuje menos resistencia) y su masa.</li>
+    <li><strong>Tercera Ley (Acción-Reacción):</strong> El batir de las alas empuja el aire hacia abajo, y el aire, a su vez, empuja al animal hacia arriba (sustentación) o hacia adelante (empuje).</li>
+  </ul>
+
+  <h5>5. Mecánica del Batido de Alas</h5>
+  <p>El batido de alas genera sustentación y empuje. En aves, el movimiento hacia abajo empuja el aire hacia atrás. En insectos, las alas giran y cambian de ángulo para crear vórtices que aumentan la sustentación.</p>
+</section>
+
+<!-- Lengua y Literatura -->
+<section id="lengua">
+  <h2>Lengua y Literatura</h2>
+  <h3>Pérdida de la Biodiversidad</h3>
+  <p>La biodiversidad, entendida como la variedad de seres vivos que habitan la Tierra y la interacción de estos dentro de ecosistemas complejos, es el sostén fundamental de la vida en el planeta. Sin embargo, la humanidad enfrenta una amenaza sin precedentes: la acelerada disminución de esta diversidad biológica a causa de su propia actividad. Defender la biodiversidad no es únicamente una causa ambientalista; es una urgencia ética, social y económica de la que depende el futuro de nuestra civilización.</p>
+
+  <h4>Principales causas de la pérdida de biodiversidad</h4>
+  <ul>
+    <li><strong>Cambio en el uso del suelo:</strong> La deforestación, la expansión agrícola, la urbanización y la transformación de hábitats son responsables de la destrucción y fragmentación de ecosistemas vitales para multitud de especies.</li>
+    <li><strong>Sobreexplotación de recursos:</strong> La caza, la pesca y la tala insostenibles han llevado a miles de especies al borde de la extinción, pues se extraen los recursos a un ritmo mayor del que la naturaleza puede reponer.</li>
+    <li><strong>Contaminación:</strong> El uso excesivo de pesticidas, plásticos y otros contaminantes afecta grave y directamente la vida de plantas y animales, deteriorando los ecosistemas y envenenando la cadena alimenticia.</li>
+    <li><strong>Cambio climático:</strong> El calentamiento global, producto principalmente de la quema de combustibles fósiles, altera hábitats, modifica ciclos naturales y multiplica los fenómenos extremos, afectando a especies incapaces de adaptarse con la rapidez necesaria.</li>
+    <li><strong>Especies invasoras:</strong> La introducción de organismos exóticos provoca desequilibrios al desplazar, depredar o transmitir enfermedades a las especies nativas, comprometiendo ecosistemas enteros.</li>
+  </ul>
+
+  <h4>Consecuencias de la pérdida de biodiversidad</h4>
+  <ul>
+    <li><strong>Seguridad alimentaria en peligro:</strong> Muchas especies son cruciales para la polinización y la fertilidad del suelo; su desaparición pone en riesgo nuestras cosechas y acceso a alimentos variados.</li>
+    <li><strong>Salud humana y ambiental:</strong> Ecosistemas equilibrados filtran agua y aire, controlan plagas, y nos proveen recursos para medicinas. Su degradación incrementa la incidencia de enfermedades y la exposición a contaminantes.</li>
+    <li><strong>Desestabilización económica:</strong> Sectores como la agricultura, la pesca y el turismo dependen de la biodiversidad. La pérdida de especies genera pérdidas económicas y sociales directas, afectando sobre todo a comunidades vulnerables.</li>
+    <li><strong>Erosión del patrimonio cultural:</strong> Numerosas sociedades y culturas han construido su identidad junto a la naturaleza; la extinción de especies representa también la muerte de conocimientos, lenguas y tradiciones ancestrales.</li>
+  </ul>
+
+  <h4>Argumentos a favor de la acción inmediata</h4>
+  <ul>
+    <li>Cada especie perdida significa la desaparición de siglos de evolución y la pérdida de servicios ecosistémicos insustituibles.</li>
+    <li>La biodiversidad nos otorga resiliencia ante los desafíos del cambio climático y las amenazas futuras; mientras más homogéneo sea el sistema natural, más vulnerable es a las crisis.</li>
+    <li>La economía global, y nuestra propia supervivencia, dependen de sistemas vivos sanos y equilibrados.</li>
+  </ul>
+
+  <h4>Conclusión</h4>
+  <p>Frente a la acelerada pérdida de biodiversidad, la inacción no es una opción. Proteger nuestros ecosistemas y promover un desarrollo sostenible requiere políticas públicas firmes, cambios en los patrones de consumo y una profunda transformación cultural. La biodiversidad no es solo una riqueza estética o científica: es la base de la vida. Defenderla es defendernos a nosotros mismos y asegurar el legado que dejaremos a las generaciones futuras.</p>
+</section>
+
+<!-- Historia -->
+<!-- Historia -->
+<section id="historia">
+  <h2>Historia</h2>
+  <h3>Consecuencias históricas de la deforestación en el Ecuador</h3>
+  <p>La deforestación en Ecuador ha tenido consecuencias históricas significativas, incluyendo la pérdida de biodiversidad y recursos hídricos. Desde 1990, el país ha experimentado una disminución drástica de su cobertura forestal, afectando tanto el medio ambiente como las comunidades locales.</p>
+
+  <h4>Consecuencias Ambientales</h4>
+  <ul>
+    <li><strong>Pérdida de Biodiversidad:</strong> La deforestación ha llevado a la extinción de numerosas especies, muchas de las cuales no han sido identificadas científicamente. Se estima que se pierden alrededor de 50,000 especies anualmente debido a la destrucción de hábitats.</li>
+    <li><strong>Alteración del Ciclo del Agua:</strong> La eliminación de bosques afecta el ciclo hidrológico, provocando sequías más intensas y alterando la disponibilidad de agua en las regiones afectadas.</li>
+    <li><strong>Cambio Climático:</strong> La deforestación contribuye al aumento de gases de efecto invernadero, lo que agrava el calentamiento global. Se prevé que la temperatura en la Amazonía ecuatoriana podría aumentar hasta 4.5 °C si continúa la pérdida de bosques.</li>
+  </ul>
+
+  <h4>Consecuencias Sociales y Económicas</h4>
+  <ul>
+    <li><strong>Desplazamiento de Comunidades:</strong> Las familias que dependen de los bosques para su subsistencia se ven obligadas a migrar a las ciudades, donde enfrentan condiciones de vida precarias y, en algunos casos, caen en actividades delictivas.</li>
+    <li><strong>Impacto en la Economía Local:</strong> La deforestación ha llevado a la pérdida de oportunidades económicas a largo plazo, ya que los bosques destruidos representan un capital forestal valioso que podría haberse utilizado para la explotación sostenible de recursos maderables y no maderables.</li>
+  </ul>
+
+  <h4>Consecuencias Culturales</h4>
+  <ul>
+    <li><strong>Pérdida de Patrimonio Cultural:</strong> Las comunidades indígenas que habitan en la Amazonía ven amenazados sus territorios y su forma de vida, lo que resulta en la pérdida de tradiciones y conocimientos ancestrales relacionados con la conservación del medio ambiente.</li>
+    <li><strong>Conflictos por la Tierra:</strong> La presión sobre los territorios indígenas y áreas protegidas ha aumentado, generando conflictos entre comunidades locales y empresas que buscan explotar los recursos naturales.</li>
+  </ul>
+
+  <h4>Tendencias Futuras</h4>
+  <ul>
+    <li><strong>Proyecciones de Deforestación:</strong> Se estima que, si no se implementan medidas efectivas, la deforestación en la Amazonía ecuatoriana podría alcanzar cifras alarmantes en los próximos años, con un aumento significativo en la pérdida de cobertura forestal.</li>
+    <li><strong>Necesidad de Políticas Sostenibles:</strong> Es crucial que se desarrollen e implementen políticas de conservación y manejo sostenible de los recursos forestales para mitigar las consecuencias de la deforestación y proteger la biodiversidad y las comunidades locales.</li>
+  </ul>
+
+  <p>En conclusión, la deforestación en Ecuador ha tenido profundas y variadas consecuencias históricas que afectan tanto al medio ambiente como a las comunidades humanas. La pérdida de biodiversidad, la alteración del ciclo del agua y el impacto en el cambio climático son solo algunas de las repercusiones ambientales que se han intensificado a lo largo de los años.</p>
+</section>
+
+
+<!-- Emprendimiento -->
+<section id="emprendimiento">
+  <h2>Emprendimiento</h2>
+  <h3>Diseño de un prototipo sostenible con biomateriales</h3>
+  <p>Para diseñar un prototipo de producto sostenible utilizando biomateriales, es crucial considerar desde la elección de materiales hasta el ciclo de vida completo del producto. Esto implica priorizar materiales renovables, biodegradables o reciclados, minimizar el uso de energía y recursos en la producción, y diseñar para la reutilización y el reciclaje. Además, es importante que el producto sea funcional, estéticamente atractivo y accesible para el usuario final.</p>
+
+  <h4>Investigación del producto</h4>
+  <p>Las macetas biodegradables son recipientes ecológicos diseñados para contener plantas y que pueden sembrarse directamente en la tierra. Estas macetas se descomponen de forma natural, evitando plásticos y reduciendo residuos. Actualmente existen en el mercado algunas hechas de fibras vegetales o turba, pero suelen ser más caras. BioMacetas busca aprovechar residuos cotidianos como papel, cartón y cáscaras para crear un producto accesible y sostenible que fomente la siembra en espacios escolares, comunitarios o domésticos.</p>
+
+  <h4>Diseño y proceso de elaboración</h4>
+  <p>Una forma cilíndrica o cónica para facilitar su uso y siembra. Su tamaño puede adaptarse según el tipo de planta, pero generalmente es pequeño, ideal para plántulas o hierbas. El proceso inicia con la recolección y clasificación de papel, cartón y cáscaras secas. Luego, el papel y el cartón se remojan y trituran hasta formar una pulpa. Esta pulpa se mezcla con las cáscaras molidas para dar mayor rigidez y nutrientes al material. La pasta resultante se moldea a mano o con un molde, presionando bien para compactarla. Por último, se dejan secar al sol o en un lugar ventilado durante 24 a 48 horas hasta que estén sólidas.</p>
+
+  <h4>Materiales de elaboración</h4>
+  <ul>
+    <li>Papel periódico, hojas usadas o cajas de cartón (fuente de fibra).</li>
+    <li>Cáscaras secas de frutas y verduras (plátano, naranja, papa) previamente secadas al sol y trituradas (fuente de nutrientes).</li>
+    <li>Agua para formar la pulpa.</li>
+    <li>Moldes reutilizables: vasos, latas, tazas o moldes plásticos de cocina.</li>
+    <li>Opcional: un poco de almidón o fécula como aglutinante natural si se desea mayor resistencia. Estos materiales son fáciles de conseguir, económicos y en su mayoría provienen de la basura diaria.</li>
+  </ul>
+
+  <h4>Producción</h4>
+  <p>Puede realizarse a pequeña escala desde casa o en un taller escolar. Una sola persona puede producir entre 10 y 20 macetas en un día, dependiendo del tamaño y las condiciones de secado. A medida que crece la demanda, se puede aumentar la producción organizando equipos para recolectar más materiales, optimizar los moldes y mejorar las técnicas de secado. Permitiéndonos empezar como un proyecto artesanal con bajo costo y escalarlo a un pequeño emprendimiento que produzca un beneficio a mediano o corto plazo.</p>
+</section>
+
+<!-- Filosofía -->
+<section id="filosofia">
+  <h2>Filosofía</h2>
+  <h3>Analizar éticamente el uso de recursos naturales</h3>
+  <p>Los recursos naturales son todo lo que nos da la naturaleza y que usamos para vivir como el agua los árboles los minerales o el petróleo. El problema es que muchas veces los usamos sin pensar en lo que puede pasar después. No se trata solo de sacarlos y ya si no de ver si lo que hacemos está bien o mal. Por eso es importante hablar del tema no solo desde lo económico si no también desde lo ético para ver si estamos actuando de forma responsable con el planeta y con los demás. Primero hay que entender que los recursos no son infinitos. Algunos como los combustibles fósiles se pueden acabar y otros, aunque se regeneran como los bosques igual se pueden dañar si no los cuidamos bien. Entonces no se trata solo de usarlos si no de saber como y cuando hacerlo para no destruir lo que tenemos. Otro punto clave es pensar en el futuro. No podemos vivir como si fuéramos los últimos en el planeta. Las futuras generaciones también tienen derecho a un ambiente sano y recursos disponibles. Si hoy se gasta todo y se contamina el aire el agua y la tierra después será muy difícil arreglarlo. también está el tema social. En muchos lugares del mundo hay comunidades que viven cerca de zonas con muchos recursos como minerales o petróleo, pero en vez de beneficiarse son las más afectadas por la contaminación o por los desplazamientos. éticamente eso no está bien porque todos deberían tener las mismas oportunidades y ser tratados con respeto. además, hay que recordar que la naturaleza tiene un valor propio no solo porque nos sirve si no porque forma parte de la vida en el planeta. Los animales los bosques los ríos todos tienen un rol importante y si se destruyen el equilibrio natural se rompe. Por eso no se puede ver a la naturaleza solo como una fuente de cosas que usar. Nosotros también tenemos responsabilidad como personas. A veces sin darnos cuenta contribuimos al mal uso de los recursos comprando cosas que contaminan dejando luces encendidas usando más agua de la que se necesita o simplemente no reciclando. Son cosas pequeñas, pero si todos actuamos con más conciencia se pueden lograr grandes cambios. En conclusión, usar los recursos naturales de forma ética significa pensar no solo en lo que necesitamos ahora si no en como nuestras acciones afectan al planeta a otras personas y al futuro. No se trata de dejar de usarlos si no de hacerlo con respeto responsabilidad y sentido común. Si cada uno aporta su parte es posible vivir en equilibrio con la naturaleza.</p>
+
+  <h3>La crisis socio ecológica planetaria: la sociedad global del riesgo y las asimetrías de la globalización económica</h3>
+  <p>Nuestra situación actual, como decía el biólogo Barry Componer, es de un profundo desajuste entre la esfera que nos acoge (biosfera), sujeta a límites biofísicos y hoy saturada ecológicamente por el hombre, y la esfera humana y tecnológica (tecnosfera), compuesta por una población excesiva para los límites naturales y con un acelerado ritmo de producción y consumo, si bien el de unos pocos: los ricos globalizados de los países desarrollados y subdesarrollados. La envergadura de este desequilibrio no tiene precedentes en la historia y hace surgir la pregunta de cómo y por qué hemos llegado a este punto. La gran transformación de la Tierra se inicia con la Revolución Industrial de fines del s. XVIII, cuando por primera vez se dejan de utilizar energías axosomáticas renovables (fuerza animal y energía solar directa e indirecta) y comienza el uso de energías fósiles no renovables, pasándose de una economía orgánica de flujos a una economía de stocks finitos de materias energéticas y no energéticas subterráneas. Pero, por esos tiempos, en un mundo vacío o no saturado en términos ecológicos, el capital natural no era una preocupación, pues existía en abundancia, por lo que obviamente el énfasis recaía en la productividad del capital humano y técnico. Hoy, en cambio, en un mundo lleno o saturado en términos ecológicos por una sociedad industrial planetaria que produce y consume por sobre los niveles de recursos naturales finitos disponibles y por sobre la capacidad de absorción de la biosfera de los desechos y contaminación generados, el capital natural debe ser nuestra primera preocupación. Por ello, es necesario ajustar nuestra tecnosfera a los límites que fija la biosfera, puesto que los procesos lineales de la primera, aunque innovadores, son ecológicamente inarmónicos o desajustados con la segunda, cuyos procesos son cíclicos, conservadores y auto coherentes. En el declinar de la fase “fordista” del capitalismo, basado en el petróleo y la industria petroquímica (pesticidas, fertilizantes, plástico, etc.), entramos ahora a la Tercera Revolución Industrial, iniciada con la era de la energía atómica y que se despliega con la revolución de la ingeniería genética y la informática. En esta fase alcanzamos la capacidad de intervenir con la biotecnología en el proceso evolutivo, pudiendo transformar la estructura genética de plantas, animales y del ser humano mismo Hay dos características básicas del proceso de la sociedad industrial y tecnológica actual: la globalidad de sus impactos ambientales y la irreversibilidad de muchos de ellos (por ejemplo, la pérdida de la biodiversidad). Esto nos lleva a describir dos formas que toma la sociedad planetaria actual: la sociedad global del riesgo y la asimetría del proceso de la globalización económica y tecnológica Hemos llegado a un punto en la historia en que, por la magnitud de expansión de los efectos (población y escala de producción y consumo) y la calidad de penetración de la tecnología en las raíces de la naturaleza (tecnología no solo transformadora, sino también recreadora de lo natural), la sociedad actual se instala en una situación de riesgo contextual permanente como parte de sus procesos y actividades. El sociólogo U. Beck caracteriza a la actual civilización planetaria con cinco tesis: los riesgos actuales causan daños sistemáticos y a menudo irreversibles que requieren una definición científica de los mismos en los contextos sociales; los riesgos generan nuevas desigualdades internacionales entre los países del tercer mundo y los industrializados, y dentro de estos últimos; la expansión de los riesgos aumenta la lógica productivista del capitalismo; el conocimiento científico de los riesgos adquiere un nuevo significado político, y los riesgos afectan la salud y el medioambiente, pero también generan efectos secundarios sociales (hundimiento de mercados, aumento de costos, judicialización, etc.)</p>
+
+  <h3>La justicia ecológica: justicia global, justicia interespecífica y justicia intergeneracional</h3>
+  <p>Hoy en día es necesario cambiar la idea de progreso que tenemos que no solo mida las cosas en números o cantidad, sino que también piense en cuidar el planeta. Esto significa producir de manera más eficiente hacer más con menos energía y materias primas y que los sistemas económicos y sociales respeten los límites que tiene la biosfera para no dañarla. El Instituto Wuppertal dice que la sostenibilidad es dejar intactos en el tiempo los procesos internos de la esfera que es un sistema vivo que se organiza solo. Un sistema económico solo es sostenible si usa los recursos de forma que no agote las fuentes ni contamine los lugares que la exósfera usa para reciclar. Si pensamos que ya estamos pasando los límites que el planeta puede aguantar y que encima la distribución de los beneficios y daños es muy desigual entre las personas que vivimos ahora y las que vendrán, además de otros seres vivos que comparten el ambiente.</p>
+</section>
+
+<!-- Programación -->
+<section id="programacion">
+  <h2>Programación</h2>
+  <h3>Propuesta de Página Web: "EcoVida Ecuador"</h3>
+  <p>La página web "EcoVida Ecuador" integra investigaciones interdisciplinarias sobre biodiversidad y sostenibilidad en Ecuador, abarcando Biología, Química, Física, Matemática, Lengua y Literatura, Historia, Inglés, Emprendimiento y Filosofía. Su objetivo es educar y concienciar sobre la conservación ambiental a través de un diseño interactivo y accesible.</p>
+
+  <h4>Objetivo</h4>
+  <p>Consolidar investigaciones académicas en una plataforma que promueva la educación ambiental y acciones para proteger la biodiversidad ecuatoriana.</p>
+
+  <h4>Estructura y Contenido</h4>
+  <ol>
+    <li><strong>Inicio:</strong> Descripción: Página de bienvenida con imágenes de la biodiversidad ecuatoriana y un mensaje persuasivo en inglés sobre especies en peligro. Contenido: Video introductorio sobre la "Casa Común" y estadísticas de biodiversidad. Ejemplo: Banner con "Save the Andean Condor!" y fotos de Galápagos.</li>
+    <li><strong>Ecosistemas y Relaciones Tróficas (Biología):</strong> Descripción: Explica ecosistemas ecuatorianos y sus cadenas tróficas. Contenido: Infografía interactiva de niveles tróficos. Ejemplo: Diagrama del ecosistema amazónico mostrando el impacto de la deforestación.</li>
+    <li><strong>Compuestos Orgánicos y Biodiversidad (Química):</strong> Descripción: Vincula compuestos orgánicos de plantas con la conservación. Contenido: Artículo sobre plantas medicinales y mapa de regiones. Ejemplo: Análisis de quinina en la cinchona y su hábitat.</li>
+    <li><strong>Física del Vuelo (Física):</strong> Descripción: Detalla principios de aerodinámica en aves e insectos nativos. Contenido: Simulación del vuelo de un colibrí. Ejemplo: Animación mostrando la sustentación en el cóndor andino.</li>
+    <li><strong>Análisis de Biodiversidad (Matemática):</strong> Descripción: Presenta estadísticas de biodiversidad por región. Contenido: Gráfico interactivo de índices de diversidad. Ejemplo: Mapa de calor de la Amazonía con alta diversidad.</li>
+    <li><strong>Pérdida de Biodiversidad (Lengua y Literatura):</strong> Descripción: Ensayo argumentativo sobre causas y soluciones de la pérdida de biodiversidad. Contenido: Texto interactivo con soluciones destacadas. Ejemplo: Ensayo sobre la extinción del oso de anteojos.</li>
+    <li><strong>Deforestación Histórica (Historia):</strong> Descripción: Analiza el impacto histórico de la deforestación. Contenido: Línea de tiempo interactiva de eventos clave. Ejemplo: Módulo sobre la deforestación por petróleo en los 1970s.</li>
+    <li><strong>Letrero Persuasivo (Inglés):</strong> Descripción: Mensaje en inglés para concienciar sobre especies en peligro. Contenido: Banner digital con llamado a la acción. Ejemplo: "Protect the Galapagos Tortoise! Act Now!" con enlace a donaciones.</li>
+    <li><strong>Producto Sostenible (Emprendimiento):</strong> Descripción: Prototipo de un producto biodegradable hecho con residuos. Contenido: Galería y ficha técnica. Ejemplo: BioMacetas hechas con pulpa de papel y cáscaras.</li>
+    <li><strong>Ética Ambiental (Filosofía):</strong> Descripción: Reflexión sobre justicia ecológica y uso responsable. Contenido: Podcast y texto de apoyo. Ejemplo: Debate sobre derechos de la naturaleza y justicia intergeneracional.</li>
+  </ol>
+</section>
+
+<footer>
+  <p>© TRABAJO INTERDICIPLINARIO.</p>
+</footer>
 
 </body>
 </html>
+
